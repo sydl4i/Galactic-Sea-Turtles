@@ -21,7 +21,7 @@ public class StarCollisionScript : MonoBehaviour
         }*/
 
         // We check for the name "Sphere" since that is the default Building Block name
-        if (other.gameObject.name.Contains("Sphere"))
+        if (other.gameObject.name.Contains("Cube"))
         {
             ChangeStaffColor();
 
