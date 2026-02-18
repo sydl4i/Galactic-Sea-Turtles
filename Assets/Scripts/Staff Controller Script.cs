@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StarCollisionScript : MonoBehaviour
+public class StaffController : MonoBehaviour
 {
     // Set up that is not relevant yet -syd
     /*[Header("Visual States")]
@@ -9,7 +9,23 @@ public class StarCollisionScript : MonoBehaviour
     */
 
     // Drag the Cylinder (child) into this slot in the Inspector
+    [Header("References")]
     public Renderer staffRenderer;
+    public GameObject cubePrefab;    // Your Cube Prefab with a Rigidbody
+    public Transform shootPoint;     // An Empty at the tip of the staff
+
+    [Header("Settings")]
+    public float shootForce = 500f;
+    private int storedStars = 0;
+
+    void Update()
+    {
+        // Check for Right Index Trigger press
+        if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) && storedStars > 0)
+        {
+            ShootCube();
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,20 +39,27 @@ public class StarCollisionScript : MonoBehaviour
         // We check for the name "Sphere" since that is the default Building Block name
         if (other.gameObject.name.Contains("Cube"))
         {
-            ChangeStaffColor();
-
-            // Destroy the sphere so it looks like it was "absorbed"
+            storedStars++;
+            staffRenderer.material.color = Color.yellow; // Visual feedback
             Destroy(other.gameObject);
+            Debug.Log("Stars Stored: " + storedStars);
         }
     }
 
-    void ChangeStaffColor()
+    void ShootCube()
     {
-        // Changes the cylinder to a random color to show the hit registered
-        Color randomColor = new Color(Random.value, Random.value, Random.value);
-        staffRenderer.material.color = randomColor;
+        storedStars--;
 
-        Debug.Log("Star absorbed! Color changed.");
+        // Spawn and launch
+        GameObject newCube = Instantiate(cubePrefab, shootPoint.position, shootPoint.rotation);
+        Rigidbody rb = newCube.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.AddForce(shootPoint.forward * shootForce);
+        }
+
+        // Return to white if empty
+        if (storedStars <= 0) staffRenderer.material.color = Color.white;
     }
 
     /*void AddStar(GameObject starInstance)
