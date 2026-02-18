@@ -6,14 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/XRReadyTemplate.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Occlusion.unity
     guid: 806dfa1ee3e264b428a484ee9c24237a
   - enabled: 0
     path: Assets/Scenes/occlusion_test.unity
     guid: bfe42d4b24276e14f9efe7f1b229401d
+  - enabled: 0
+    path: Assets/Scenes/Staff.unity
+    guid: c7cf98678b663044abed868511fc6424
+  - enabled: 1
+    path: Assets/Scenes/Staff 1.unity
+    guid: 126b4751e79b90b448f892e9ab8cb0ac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: db58d9c73ebbdec438f18de8b0978065, type: 2}
