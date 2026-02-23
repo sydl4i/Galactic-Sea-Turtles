@@ -579,7 +579,7 @@ PlayerSettings:
   enableCrashReportAPI: 0
   cameraUsageDescription: 
   locationUsageDescription: 
-  microphoneUsageDescription: 
+  microphoneUsageDescription: This app uses the microphone for voice input in VR.
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 11.0
   switchNMETAOverride: 
