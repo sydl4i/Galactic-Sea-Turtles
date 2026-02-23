@@ -5,6 +5,9 @@ public class StarMischief : MonoBehaviour
     [Header("Avoid Target (leave empty to auto-find)")]
     public Transform targetToAvoid; // If empty, script will auto-find the active XR camera.
 
+    [Header("Height")]
+    public float floatHeight = 1.2f; // meters off the floor
+
     [Header("Movement")]
     public float smallMoveRadius = 1.2f;
     public float bigMoveRadius = 2.5f;
@@ -31,7 +34,6 @@ public class StarMischief : MonoBehaviour
     private Vector3 goal;
     private float nextPick;
     private float currentSpeed;
-
     private float yBase;
 
     // Grab friendliness: if the object gets parented (common in grab systems),
@@ -45,23 +47,19 @@ public class StarMischief : MonoBehaviour
         initialParent = transform.parent;
     }
 
-    void OnEnable()
-    {
-        // If this object is enabled after being moved/spawned, reset home correctly.
-        home = transform.position;
-        yBase = home.y;
-        PickNewTarget(forceBig: false);
-    }
-
     void Start()
     {
-        // If user didn’t assign a target, find the active XR camera (works with Meta Camera Rig).
+        // Auto-find target if not assigned
         if (targetToAvoid == null)
             targetToAvoid = FindBestCameraTransform();
 
-        // Ensure goal + speed are initialized
+        // Set a consistent base height and treat current position as "home" (XZ)
         home = transform.position;
-        yBase = home.y;
+        yBase = floatHeight;
+
+        home.y = yBase;
+        transform.position = home;
+
         PickNewTarget(forceBig: false);
     }
 
@@ -71,33 +69,33 @@ public class StarMischief : MonoBehaviour
         if (transform.parent != initialParent && transform.parent != null)
             return;
 
-        // 2) If physics is driving it (non-kinematic), also avoid fighting.
-        if (rb != null && !rb.isKinematic)
-            return;
+        // 2) Keep trying to auto-find the camera if it wasn't ready at Start.
+        if (targetToAvoid == null)
+            targetToAvoid = FindBestCameraTransform();
 
         // 3) Flee if target is close
         if (targetToAvoid != null)
         {
             float d = Vector3.Distance(transform.position, targetToAvoid.position);
             if (d < scareRadius)
-            {
                 PickFleeTarget();
-            }
         }
 
         // 4) Random repick
         if (Time.time >= nextPick)
-        {
             PickNewTarget(forceBig: false);
-        }
 
-        // 5) Move toward goal (XZ movement)
-        Vector3 next = Vector3.MoveTowards(transform.position, goal, currentSpeed * Time.deltaTime);
+        // 5) Compute next position (XZ move + Y bob)
+        Vector3 currentPos = rb != null ? rb.position : transform.position;
 
-        // 6) Bob (Y only)
+        Vector3 next = Vector3.MoveTowards(currentPos, goal, currentSpeed * Time.deltaTime);
         next.y = yBase + Mathf.Sin(Time.time * bobSpeed) * bobAmount;
 
-        transform.position = next;
+        // 6) Apply movement safely with or without physics
+        if (rb != null && !rb.isKinematic)
+            rb.MovePosition(next);
+        else
+            transform.position = next;
     }
 
     private void PickNewTarget(bool forceBig)
@@ -124,7 +122,9 @@ public class StarMischief : MonoBehaviour
             return;
         }
 
-        Vector3 away = (transform.position - targetToAvoid.position);
+        Vector3 fromPos = rb != null ? rb.position : transform.position;
+
+        Vector3 away = (fromPos - targetToAvoid.position);
         away.y = 0f;
 
         // If we're basically on top of target, pick a random direction
@@ -137,7 +137,7 @@ public class StarMischief : MonoBehaviour
         away.Normalize();
 
         float jumpDistance = Random.Range(smallMoveRadius, bigMoveRadius);
-        Vector3 candidate = transform.position + away * jumpDistance;
+        Vector3 candidate = fromPos + away * jumpDistance;
 
         goal = ClampToHome(candidate);
         currentSpeed = Random.Range(maxSpeed * 0.7f, maxSpeed);
@@ -177,8 +177,10 @@ public class StarMischief : MonoBehaviour
     {
         if (!drawGizmos) return;
 
+        Vector3 drawHome = (home == Vector3.zero) ? transform.position : home;
+
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(home == Vector3.zero ? transform.position : home, maxDistanceFromHome);
+        Gizmos.DrawWireSphere(drawHome, maxDistanceFromHome);
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawSphere(goal, 0.05f);
