@@ -15,7 +15,7 @@ public class StaffController : MonoBehaviour
     public Transform shootPoint;     // An Empty at the tip of the staff
 
     [Header("Settings")]
-    public float shootForce = 500f;
+    public float shootForce = 300f;
     private int storedStars = 0;
 
     void Update()
