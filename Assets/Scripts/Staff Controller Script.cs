@@ -37,7 +37,7 @@ public class StaffController : MonoBehaviour
         }*/
 
         // We check for the name "Sphere" since that is the default Building Block name
-        if (other.gameObject.name.Contains("Cube"))
+        if (other.gameObject.name.Contains("Cube") || other.gameObject.name.Contains("Star"))
         {
             storedStars++;
             staffRenderer.material.color = Color.yellow; // Visual feedback
