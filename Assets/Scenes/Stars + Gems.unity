@@ -454,6 +454,128 @@ Transform:
   m_Children: []
   m_Father: {fileID: 939344982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &233345209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.412
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.485
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70628166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000015436276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70793104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015472322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 43cbd543c0c914e6b92d73aec9a1323c, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_Name
+      value: Stargem Shy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+--- !u!1001 &309249850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70628166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000015436276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70793104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015472322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 09eb5942e89584c6481ee96547bfb838, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_Name
+      value: Stargem Mischievous
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +697,67 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1001 &448184209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.409
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.695
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70628166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000015436276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70793104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015472322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cbbe1dcc644c34fd4bbb4288d6dd8ec4, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_Name
+      value: Stargem Happy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
 --- !u!1001 &523859484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1467,6 +1650,67 @@ Transform:
   - {fileID: 1639082489}
   m_Father: {fileID: 939344982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1240237110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.413
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70628166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000015436276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70793104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015472322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6670bbc01be934a1ba32afd3a90f3a38, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_Name
+      value: Stargem Curious
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
 --- !u!1001 &1409114882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2204,6 +2448,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa4b0fb4b03c46b28bd93c2ed540a68, type: 3}
+--- !u!1001 &1979538562
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.414
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.215
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.503
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70628166
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.000000015436276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70793104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000015472322
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -269.866
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f7190abd4a6e142c6913ff3d0b40fa22, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
+      propertyPath: m_Name
+      value: Stargem Lazy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7aa068fcba7fd4c198e9798b6bd61c77, type: 3}
 --- !u!1 &2101882630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2333,3 +2638,8 @@ SceneRoots:
   - {fileID: 1208465590}
   - {fileID: 832137099}
   - {fileID: 2119841068}
+  - {fileID: 233345209}
+  - {fileID: 309249850}
+  - {fileID: 448184209}
+  - {fileID: 1240237110}
+  - {fileID: 1979538562}
