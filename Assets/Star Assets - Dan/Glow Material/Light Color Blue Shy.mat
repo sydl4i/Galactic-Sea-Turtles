@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Light Color Purple
+  m_Name: Light Color Blue Shy
   m_Shader: {fileID: -6465566751694194690, guid: a29bbcbbea9714f0e83debe3fe50427f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -115,7 +115,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Glow_Strength: 1.31
+    - _Glow_Strength: 0.58
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -140,7 +140,7 @@ Material:
     - _Color: {r: 1, g: 0.9742088, b: 0.5518868, a: 1}
     - _EmissionColor: {r: 8.474189, g: 7.357119, b: 1.638876, a: 1}
     - _Emission_Color: {r: 0.9811321, g: 0.9350891, b: 0.5507298, a: 1}
-    - _Neon_Color: {r: 0.40276706, g: 0.14159843, b: 0.8113208, a: 1}
+    - _Neon_Color: {r: 0.38812745, g: 0.7797853, b: 0.9245283, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
