@@ -3,7 +3,6 @@ using UnityEngine;
 public class CeilingSocket : MonoBehaviour
 {
     public bool isFilled = false;
-    public Color filledColor = Color.yellow;
     private Renderer myRenderer;
 
     void Start()
@@ -13,13 +12,24 @@ public class CeilingSocket : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Check if the projectile is one of our shot cubes
+        /*// Check if the projectile is one of our shot cubes
         if (!isFilled && (other.gameObject.name.Contains("Cube") || other.gameObject.name.Contains("Star")))
         {
             CaptureStar(other.gameObject);
+        }*/
+        StarData data = other.GetComponent<StarData>();
+        if (!isFilled && data != null)
+        {
+            isFilled = true;
+
+            // Take the color from the star's data
+            myRenderer.material.color = data.starColor;
+
+            Destroy(other.gameObject);
+            SendMessageUpwards("CheckForWin");
         }
     }
-
+    /*
     void CaptureStar(GameObject star)
     {
         isFilled = true;
@@ -30,5 +40,5 @@ public class CeilingSocket : MonoBehaviour
 
         // Notify the parent manager to check if all 5 are full
         SendMessageUpwards("CheckForWin");
-    }
+    }*/
 }

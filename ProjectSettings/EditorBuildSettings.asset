@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/mischievous_star_prototype.unity
     guid: 387d6cde379354a4e9b11d19b34f6503
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Stars + Staff + Gems.unity
     guid: c9a731f3413bf4da598aaa9f231a7805
   - enabled: 0
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Light + Shadow.unity
     guid: 36246cc1dd7f015428dc705da9e4497e
+  - enabled: 0
+    path: Assets/Scenes/Staff 2.unity
+    guid: f3be98c403e79b04b9067ef54ce0e0eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: db58d9c73ebbdec438f18de8b0978065, type: 2}
